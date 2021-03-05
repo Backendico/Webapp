@@ -1,30 +1,35 @@
 ﻿@layout LoginLayout
 @page "/Login"
-<h3>Login</h3>
-<body class="container">
-<form>
-        <div class="form-group">
-            <div class="col col-5">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="col col-5">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-            </div>
-        </div>
-        <div class="form-check">
-            <div class="col col-5">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-        <button type="submit" class="btn btn-secondary">register</button>
-</form>
-    </body>
+<head>
+    <link href="/css/Login.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <center>
+        <main class="form-signin">
+            <form>
+                <img class="mb-4" src="https://backendi.ir/wp-content/uploads/2020/11/logo_backendi-300x138.png" alt="" width="300" height="138">
+                <h1 class="h3 mb-3 fw-normal">Wellcome to Bacendi</h1>
+                <div class="mb-2">
+                    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                </div>
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                <div class="checkbox mb-3">
+                    <label>
+                        <input type="checkbox" value="remember-me"> Remember me
+                    </label>
+                </div>
+                <div class="d-inline">
+                    <button class="w-auto btn btn-lg btn-primary d-inline" type="submit">Sign in</button>
+                </div>
+                <div class="d-inline">
+                    <button class="w-auto btn btn-lg btn-secondary d-inline" type="submit">Sign in</button>
+                </div>
+            </form>
+        </main>
+    </center>
+   
+</body>
 @code {
 
 }
